@@ -1,0 +1,7 @@
+streamlit>=1.40
+pandas
+numpy
+scikit-learn
+joblib
+# only needed if the saved final model is the neural network:
+# tensorflow
