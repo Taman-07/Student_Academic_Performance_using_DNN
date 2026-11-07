@@ -1,7 +1,24 @@
-venv/
+# Python
 __pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
 .ipynb_checkpoints/
-*.pyc
 .env
-dataset
-requirements.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Notebook working folder (training checkpoints, tuned DNN files, etc.)
+notebooks/models/
+
+# Keras/TensorFlow model files (large, not needed if the final model is the Random Forest)
+*.keras
+*.h5
+
+# Streamlit secrets
+.streamlit/secrets.toml
