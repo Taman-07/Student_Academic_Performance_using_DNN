@@ -1,0 +1,30 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit secrets (never commit)
+.streamlit/secrets.toml
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Raw data (optional - keep dataset out of the repo)
+*.csv
+
+# NOTE: the artifacts/ folder (dnn_model.keras, preprocessor.joblib, metadata.json)
+# is NOT ignored on purpose, so the app works when deployed (e.g. Streamlit Cloud).

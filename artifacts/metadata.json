@@ -1,0 +1,141 @@
+{
+  "selected_features": [
+    "G2",
+    "G1",
+    "absences",
+    "Mjob",
+    "goout",
+    "Fjob",
+    "failures",
+    "reason",
+    "age",
+    "health",
+    "Medu",
+    "Walc",
+    "guardian",
+    "Fedu",
+    "freetime"
+  ],
+  "features": {
+    "G2": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 19.0,
+      "default": 11.0
+    },
+    "G1": {
+      "type": "numeric",
+      "min": 3.0,
+      "max": 19.0,
+      "default": 11.0
+    },
+    "absences": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 75.0,
+      "default": 4.0
+    },
+    "Mjob": {
+      "type": "categorical",
+      "options": [
+        "at_home",
+        "health",
+        "other",
+        "services",
+        "teacher"
+      ]
+    },
+    "goout": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 5.0,
+      "default": 3.0
+    },
+    "Fjob": {
+      "type": "categorical",
+      "options": [
+        "at_home",
+        "health",
+        "other",
+        "services",
+        "teacher"
+      ]
+    },
+    "failures": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 3.0,
+      "default": 0.0
+    },
+    "reason": {
+      "type": "categorical",
+      "options": [
+        "course",
+        "home",
+        "other",
+        "reputation"
+      ]
+    },
+    "age": {
+      "type": "numeric",
+      "min": 15.0,
+      "max": 22.0,
+      "default": 17.0
+    },
+    "health": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 5.0,
+      "default": 4.0
+    },
+    "Medu": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 4.0,
+      "default": 3.0
+    },
+    "Walc": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 5.0,
+      "default": 2.0
+    },
+    "guardian": {
+      "type": "categorical",
+      "options": [
+        "father",
+        "mother",
+        "other"
+      ]
+    },
+    "Fedu": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 4.0,
+      "default": 2.0
+    },
+    "freetime": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 5.0,
+      "default": 3.0
+    }
+  },
+  "class_names": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "results": {
+    "Accuracy": {
+      "Logistic Regression": 0.883,
+      "Random Forest": 0.917,
+      "DNN (tuned)": 0.9
+    },
+    "F1 (macro)": {
+      "Logistic Regression": 0.884,
+      "Random Forest": 0.916,
+      "DNN (tuned)": 0.898
+    }
+  }
+}
